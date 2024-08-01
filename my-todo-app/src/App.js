@@ -1,21 +1,15 @@
 import './App.css';
+import TodoCard from './ProjectFiles/TodoCard.jsx';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        TODO App
       </header>
+      <main>
+        <TodoCard des="descriptionTitle" cat="dropdownCategory" pri="radioPriority" per="dayPeriod" />
+      </main>
     </div>
   );
 }
