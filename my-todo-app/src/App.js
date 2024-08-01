@@ -1,6 +1,6 @@
+import React, {useState} from 'react';
 import './App.css';
-import TodoList from './Components/TodoList.jsx';
-import React from 'react';
+import TodoForm from './TodoForm.jsx';
 
 function App() {
 
@@ -11,9 +11,13 @@ function App() {
       </header>
       <main className="cards-container">
         <TodoList/>
+        <TodoForm/>
       </main>
     </div>
+    
   );
 }
+
+
 
 export default App;

@@ -8,7 +8,6 @@ function TodoList() {
         description: "Task 1",
         category: "Category 1",
         priority: "High",
-        period: "Mornings",
         completed: true
     }, 
     
@@ -17,7 +16,6 @@ function TodoList() {
         description: "Task 2",
         category: "Category 2",
         priority: "Medium",
-        period: "Afternoons",
         completed: false
     }]);
         const [text, setText] = useState('');
