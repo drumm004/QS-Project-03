@@ -1,14 +1,16 @@
 import './App.css';
-import TodoCard from './ProjectFiles/TodoCard.jsx';
+import TodoList from './Components/TodoList.jsx';
+import React from 'react';
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
         TODO App
       </header>
-      <main>
-        <TodoCard des="descriptionTitle" cat="dropdownCategory" pri="radioPriority" per="dayPeriod" />
+      <main className="cards-container">
+        <TodoList/>
       </main>
     </div>
   );

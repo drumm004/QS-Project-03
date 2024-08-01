@@ -1,0 +1,19 @@
+.todo-card {
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    background-color: aqua;
+    display: inline-block;
+    width: 300px;
+}
+
+.todo-card {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.todo-card p {
+    text-decoration: line-through;
+    color: grey
+}
