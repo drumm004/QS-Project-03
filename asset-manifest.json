@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/QS-Project-03/static/css/main.4716db97.css",
+    "main.js": "/QS-Project-03/static/js/main.f13ccada.js",
+    "index.html": "/QS-Project-03/index.html",
+    "main.4716db97.css.map": "/QS-Project-03/static/css/main.4716db97.css.map",
+    "main.f13ccada.js.map": "/QS-Project-03/static/js/main.f13ccada.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4716db97.css",
+    "static/js/main.f13ccada.js"
+  ]
+}
