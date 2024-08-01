@@ -1,9 +1,9 @@
-import React, {useState} from 'react'
-import TodoList from './TodoList'
+import React, {useState} from 'react';
+import TodoList from './Components/TodoList';
 
+function TodoForm({ addTodoLog }) {
 
-const TodoForm = () => {
-    const [input, setInput] = useState(
+    const [data, setData] = useState(
         {
             description: '',
             category: '',
@@ -12,21 +12,23 @@ const TodoForm = () => {
 
     const handleChange = (e) => {
         e.preventDefault()
-        console.log(JSON.stringify(input))
+        console.log(JSON.stringify(data))
     }
 
-    const content = (
-        <TodoForm className='form flex-col' onSubmit={handleSubmit}>
-
-            <h2>Todo Info</h2>
-
-            <TodoList data={data} handleChange={handleChange}/>
-
-            <button className='button'>Submit</button>
-        </TodoForm>
-    )
+    
+       
+    
     return (
-        <div>TodoForm</div>
+        <div>TodoForm
+             <TodoForm className='form flex-col' onSubmit={handleChange}>
+
+                <h2>Todo Info</h2>
+
+                <TodoList data={data} handleChange={handleChange}/>
+
+                <button className='button'>Submit</button>
+            </TodoForm>
+        </div>
     )
 } 
 

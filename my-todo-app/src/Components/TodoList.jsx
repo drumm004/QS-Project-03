@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
 import TodoCard from './TodoCard';
 import {v4} from 'uuid';
 
-function TodoList() {
+function TodoList(props) {
         const [tasks, setTasks] = useState([{
         id: v4(),
         description: "Task 1",
@@ -18,15 +18,15 @@ function TodoList() {
         priority: "Medium",
         completed: false
     }]);
-        const [text, setText] = useState('');
-    function addTask(text) {
+        const [data, setData] = useState('');
+    function addTask(data) {
         const newTask = {
             id: v4(),
-            text,
+            data,
             completed: false
         };
         setTasks([...tasks, newTask]);
-        setText('');
+        setData('');
     }
     function deleatTask(id) {
         setTasks(tasks.filter(task => task.id !== id));
@@ -49,9 +49,9 @@ function TodoList() {
             deleteTask={deleatTask}
             toggleCompleted={toggleCompleted}/> 
         ))}
-        <input value={text} 
-        onChange={e => setText(e.target.value)}/>
-        <button onClick={() => addTask(text)}>Add</button>
+        <input value={data} 
+        onSubmit={e => setData(e.target.value)}/>
+        <button onSubmit={() => addTask(data)}>Add</button>
     </div>
     );
 }

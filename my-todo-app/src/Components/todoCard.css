@@ -6,12 +6,10 @@
     background-color: aqua;
     display: inline-block;
     width: 300px;
-}
-
-.todo-card {
     display: flex;
     justify-content: space-between;
     margin-bottom: 8px;
+    cursor: pointer;
 }
 .todo-card p {
     text-decoration: line-through;

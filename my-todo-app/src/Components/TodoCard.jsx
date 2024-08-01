@@ -15,6 +15,7 @@ function TodoCard({task, deleatTask, toggleCompleted}) {
       <button onClick={() => deleatTask(task.id)}>X</button>
     </div>
   );
+  
 }
 
 export default TodoCard;
