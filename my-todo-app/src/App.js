@@ -1,33 +1,33 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
-import TodoForm from './TodoForm.jsx';
-import TodoList from './Components/TodoList.jsx';
+import Header from './Components/Header.jsx';
+import Todo from './Components/Todo.jsx';
+import background from './background.png';
 
-function App(props) {
-
-  const [taskLogs, setTaskLogs] = useState([])
-  const addTaskLog = (log) => {
-    let logs = [...taskLogs, log];
-    setTaskLogs(logs);
-  }
+function App() {
 
   return (
-    <div className="App">
-      <header className="App-header">
-        Today's Todo's
+    <div className="App" style={{
+        backgroundImage: `url(${background})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        height: '100vh',
+        width: '100vw',
+        overflow: 'hidden',
+        position: 'relative',
+
+  }}>
+      <header className="header">
+        <Header/>
       </header>
-      <main className="cards-container">
-        <TodoList tasks={taskLogs}/>
-        <TodoForm addTaskLog={addTaskLog}/>
+      <main className="container">
+        <Todo/>
       </main>
     </div>
   );
 }
 
-//ReactDom.render(<App/>, 
-  //document.getElementById('root')
+//ReactDOM.render(<App/>, document.getElementById('root'))
 
-
-
-
-export default App;
+export default App
