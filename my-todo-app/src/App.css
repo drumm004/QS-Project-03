@@ -7,6 +7,7 @@
    .text-right{
     text-align: right;
    }
+
    .nav{
     display: flex;
     justify-content: space-between;
@@ -15,39 +16,55 @@
     height:100%;
     padding: 20px;
    }
+
    nav .nav-left,.nav-right{
     margin:2px 20px;
    }
+
    nav .nav-left a{
-    font-size: 23px;
-    color: gray
+    font-size: 30px;
+    color: brown !important;
+    text-decoration: underline;
    }
+
    nav a{
     color:black;
     text-decoration: none;
     font-size: 20px;
+    cursor: pointer;
    }
+
    .Button{
     display: flex;
     justify-content: end;
     margin:20px !important;
    }
+
    .task-container{
     border:2px solid rgb(231, 212, 212);
     margin:8px
    }
+
    .task-container .taskmeta{
     border:2px solid rgb(184, 18, 18);
     display: flex;
      
    }
+
    .task_edit{
     margin: 20px ;
    }
+
    .task_edit form{
     display: flex;
     flex-direction: column;
    }
+
    .task_edit form input,label,button{
     margin:5px 10px!important;
+   }
+
+   .completed-task {
+    text-decoration: line-through;
+    color: gray;
    }
