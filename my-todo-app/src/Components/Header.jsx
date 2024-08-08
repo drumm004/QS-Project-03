@@ -11,7 +11,7 @@ function Header() {
           </div>
           <div className="nav-right">
             <div className="tabs">
-              <a href="#">Contact</a>
+              <a href="/ContactForm">Contact</a>
             </div>
           </div>
         </nav>

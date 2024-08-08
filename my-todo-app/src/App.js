@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Components/Header.jsx';
 import Todo from './Components/Todo.jsx';
 import background from './background.png';
+import ContactForm from './Components/ContactForm.jsx';
 
 function App() {
 
@@ -27,7 +28,5 @@ function App() {
     </div>
   );
 }
-
-//ReactDOM.render(<App/>, document.getElementById('root'))
 
 export default App
